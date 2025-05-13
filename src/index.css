@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Poppins500;
+    src: url(./assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins600;
+    src: url(./assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins700;
+    src: url(./assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@theme {
+    --font-Poppins500: Poppins500;
+    --font-Poppins600: Poppins600;
+    --font-Poppins700: Poppins700;
+    --font-Inter: Inter;
+    --color-primary-text: #1E1D1D;
+    --color-secondary-text: #8B8E99;
+    --color-secondary: #3858D6;
+    --color-primary-bg: #F6F6F6;
+    --color-secondary-bg: #0B0B0B;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    padding: 0 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title_hero {
+    font-family: var(--font-Poppins700);
+    font-size: 38px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.title {
+    font-family: var(--font-Inter);
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 700;
+    color: var(--color-primary-text);
+}
+
+.subtitle {
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+
+.desc {
+    font-family: var(--font-Inter);
+    font-size: 12px;
+    line-height: 100%;
+    font-weight: 500;
+    color: var(--color-secondary-text);
+}
+
+.text {
+    font-family: var(--font-Poppins500);
+    font-size: 12px;
+    line-height: 100%;
+    color: var(--color-secondary-text);
+}
+
+.btn {
+    height: 35px;
+    font-family: var(--font-Poppins600);
+    font-size: 14px;
+    line-height: 100%;
+    color: #fff;
+    background-color: var(--color-secondary);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0 18px;
+    }
+
+    .title_hero {
+        font-size: 44px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .btn {}
+}
+
+@media (min-width: 768px) {
+    .title_hero {
+        font-size: 50px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .btn {
+        height: 41px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .title_hero {
+        font-size: 64px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .btn {
+        height: 45px;
+        font-size: 18px;
+    }
+}
