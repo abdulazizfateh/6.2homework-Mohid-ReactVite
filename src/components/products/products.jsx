@@ -11,7 +11,7 @@ const Products = () => {
                     <div className='products_cards grid grid-cols-2 sm:grid-cols-3 gap-[10px] sm:gap-x-[24px] sm:gap-y-[30px] lg:gap-x-[50px] lg:gap-y-[64px] mb-[35px] sm:mb-[45px] md:mb-[55px] lg:mb-[69px]'>
                         {
                             PRODUCTS?.map((product) => (
-                                <div className="products_card flex flex-col gap-[11px]">
+                                <div key={product.id} className="products_card flex flex-col gap-[11px]">
                                     <div className="products_image min-h-[160px] md:min-h-[337px] bg-primary-bg flex items-center justify-center">
                                         <img className="w-[120px] md:w-[200px] lg:w-auto object-cover" src={product.image} alt={product.modelName} />
                                     </div>
